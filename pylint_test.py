@@ -18,11 +18,7 @@ def run_pylint():
         file_path = os.path.join(os.getcwd(), python_file)
 
         # Run Pylint and capture the return code
-        result = subprocess.run(['pylint', file_path])
-
-        # Check the return code and handle it as needed
-        if result.returncode != 0:
-            print(f"Warning: Pylint returned a non-zero exit code for {python_file}.")
+        subprocess.run(['pylint', file_path], check=True)
 
 if __name__ == "__main__":
     run_pylint()
