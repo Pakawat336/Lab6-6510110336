@@ -1,4 +1,0 @@
-- repo: https://github.com/Pakawat336/Lab6-6510110336.git
-  rev: v2.10.4
-  hooks:
-    - id: pylint
