@@ -1,3 +1,7 @@
+"""
+Module documentation for pylint_test.py
+"""
+
 import os
 import subprocess
 
